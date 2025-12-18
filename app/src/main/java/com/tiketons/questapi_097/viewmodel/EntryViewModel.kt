@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModel
 import com.example.questapi_097.repositori.RepositoryDataSiswa
 import com.tiketons.questapi_097.modeldata.DetailSiswa
 import com.tiketons.questapi_097.modeldata.UIStateSiswa
+import com.tiketons.questapi_097.modeldata.toDataSiswa
 import retrofit2.Response
 
 class EntryViewModel (private val repositoryDataSiswa: RepositoryDataSiswa) : ViewModel(){
@@ -26,7 +27,7 @@ class EntryViewModel (private val repositoryDataSiswa: RepositoryDataSiswa) : Vi
 
     suspend fun addSiswa(){
         if (validasiInput()){
-            val sip: Response<Void> = repositoryDataSiswa.postDatasiswa(uiStateSiswa.detailSiswa.toDataSiswa())
+            val sip: Response<Void> = repositoryDataSiswa.postDataSiswa(uiStateSiswa.detailSiswa.toDataSiswa())
             if (sip.isSuccessful){
                 println("Sukses Tambah Data : ${sip.message()}")
             }else {
