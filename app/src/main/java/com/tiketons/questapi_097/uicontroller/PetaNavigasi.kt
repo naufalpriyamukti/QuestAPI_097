@@ -6,7 +6,10 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.tiketons.questapi_097.uicontroller.route.DestinasiEntry
 import com.tiketons.questapi_097.uicontroller.route.DestinasiHome
+import com.tiketons.questapi_097.view.EntrySiswaScreen
+import com.tiketons.questapi_097.view.HomeScreen
 
 @Composable
 fun DataSiswaApp(
