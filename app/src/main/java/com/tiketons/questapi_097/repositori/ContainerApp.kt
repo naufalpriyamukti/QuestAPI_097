@@ -13,3 +13,7 @@ import kotlin.getValue
 interface ContainerApp{
     val repositoryDataSiswa: RepositoryDataSiswa
 }
+
+class DefaultContainerApp : ContainerApp{
+
+}
