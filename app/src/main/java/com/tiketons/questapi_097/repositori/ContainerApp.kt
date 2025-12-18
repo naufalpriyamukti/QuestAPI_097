@@ -2,6 +2,7 @@ package com.example.questapi_97.repositori
 
 import android.app.Application
 import com.example.questapi_097.apiservice.ServiceApiSiswa
+import com.example.questapi_097.repositori.RepositoryDataSiswa
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
