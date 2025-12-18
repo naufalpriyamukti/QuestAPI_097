@@ -1,5 +1,8 @@
 package com.example.questapi_097.repositori
 
+import com.example.questapi_097.apiservice.ServiceApiSiswa
+import com.tiketons.questapi_097.modeldata.DataSiswa
+
 interface RepositoryDataSiswa{
     suspend fun getDataSiswa(): List<DataSiswa>
     suspend fun postDataSiswa(dataSiswa: DataSiswa) :retrofit2.Response<Void>
