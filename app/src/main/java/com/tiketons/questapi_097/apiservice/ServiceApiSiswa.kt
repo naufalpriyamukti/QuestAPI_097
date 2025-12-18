@@ -1,6 +1,6 @@
 package com.example.questapi_097.apiservice
 
-import com.example.questapi_97.modeldata.DataSiswa
+import com.tiketons.questapi_097.modeldata.DataSiswa
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST

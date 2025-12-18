@@ -1,7 +1,8 @@
-package com.example.questapi_97.repositori
+package com.tiketons.questapi_97.repositori
 
 import android.app.Application
 import com.example.questapi_097.apiservice.ServiceApiSiswa
+import com.example.questapi_097.repositori.JaringanRepositoryDataSiswa
 import com.example.questapi_097.repositori.RepositoryDataSiswa
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
@@ -45,7 +46,8 @@ class DefaultContainerApp : ContainerApp{
     }
 
     override val repositoryDataSiswa: RepositoryDataSiswa by lazy {
-        JaringanRepositoryDataSiswa(retrofitService) }
+        JaringanRepositoryDataSiswa(retrofitService)
+    }
 
 }
 
