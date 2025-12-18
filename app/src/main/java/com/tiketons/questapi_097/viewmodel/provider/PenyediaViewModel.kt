@@ -6,7 +6,7 @@ import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.tiketons.questapi_097.viewmodel.EntryViewModel
 import com.tiketons.questapi_097.viewmodel.HomeViewModel
-import com.tiketons.questapi_97.repositori.AplikasiDataSiswa
+import com.tiketons.questapi_097.repositori.AplikasiDataSiswa
 
 fun CreationExtras.aplikasiDataSiswa(): AplikasiDataSiswa = (
         this[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY] as AplikasiDataSiswa

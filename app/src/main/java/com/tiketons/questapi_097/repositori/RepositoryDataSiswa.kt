@@ -1,6 +1,6 @@
-package com.example.questapi_097.repositori
+package com.tiketons.questapi_097.repositori
 
-import com.example.questapi_097.apiservice.ServiceApiSiswa
+import com.tiketons.questapi_097.apiservice.ServiceApiSiswa
 import com.tiketons.questapi_097.modeldata.DataSiswa
 
 interface RepositoryDataSiswa{

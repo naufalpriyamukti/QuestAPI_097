@@ -5,7 +5,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import com.example.questapi_097.repositori.RepositoryDataSiswa
+import com.tiketons.questapi_097.repositori.RepositoryDataSiswa
 import com.tiketons.questapi_097.modeldata.DetailSiswa
 import com.tiketons.questapi_097.modeldata.UIStateSiswa
 import com.tiketons.questapi_097.modeldata.toDataSiswa
