@@ -1,5 +1,16 @@
 package com.tiketons.questapi_097.viewmodel
 
+import androidx.compose.runtime.mutableStateOf
+import androidx.lifecycle.SavedStateHandle
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.tiketons.questapi_097.modeldata.DetailSiswa
+import com.tiketons.questapi_097.modeldata.UIStateSiswa
+import com.tiketons.questapi_097.modeldata.toUiStateSiswa
+import com.tiketons.questapi_097.repositori.RepositoryDataSiswa
+import kotlinx.coroutines.launch
+import okhttp3.Response
+
 class EditViewModel(savedStateHandle: SavedStateHandle, private val repositoryDataSiswa: RepositoryDataSiswa): ViewModel(){
     var uiStateSiswa by mutableStateOf(UIStateSiswa())
         private set
@@ -34,3 +45,4 @@ class EditViewModel(savedStateHandle: SavedStateHandle, private val repositoryDa
         }
     }
 }
+\
