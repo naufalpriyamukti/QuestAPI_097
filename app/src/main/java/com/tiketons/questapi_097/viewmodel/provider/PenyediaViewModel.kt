@@ -1,6 +1,7 @@
 package com.tiketons.questapi_097.viewmodel.provider
 
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
@@ -8,6 +9,7 @@ import com.tiketons.questapi_097.viewmodel.EntryViewModel
 import com.tiketons.questapi_097.viewmodel.HomeViewModel
 import com.tiketons.questapi_097.repositori.AplikasiDataSiswa
 import com.tiketons.questapi_097.viewmodel.DetailViewModel
+import com.tiketons.questapi_097.viewmodel.EditViewModel
 
 fun CreationExtras.aplikasiDataSiswa(): AplikasiDataSiswa = (
         this[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY] as AplikasiDataSiswa
@@ -26,7 +28,6 @@ object PenyediaViewModel {
                 aplikasiDataSiswa().containerApp.repositoryDataSiswa
             )
         }
-
         initializer {
             EditViewModel(
                 this.createSavedStateHandle(),
