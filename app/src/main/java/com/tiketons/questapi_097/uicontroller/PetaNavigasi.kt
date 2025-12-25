@@ -3,11 +3,17 @@ package com.tiketons.questapi_097.uicontroller
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
+import com.tiketons.questapi_097.uicontroller.route.DestinasiDetail
+import com.tiketons.questapi_097.uicontroller.route.DestinasiEdit
 import com.tiketons.questapi_097.uicontroller.route.DestinasiEntry
 import com.tiketons.questapi_097.uicontroller.route.DestinasiHome
+import com.tiketons.questapi_097.view.DetailSiswaScreen
+import com.tiketons.questapi_097.view.EditSiswaScreen
 import com.tiketons.questapi_097.view.EntrySiswaScreen
 import com.tiketons.questapi_097.view.HomeScreen
 
