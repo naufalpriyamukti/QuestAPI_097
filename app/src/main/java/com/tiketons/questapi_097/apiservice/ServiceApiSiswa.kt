@@ -14,6 +14,9 @@ interface ServiceApiSiswa{
     @GET("baca1Teman.php/{id}")
     suspend fun getSatuSiswa (@Query("id") id: Int): DataSiswa
 
+    @PUT("editTM.php/{id}")
+    suspend fun editSatuSiswa (@Query("id") id: Int, @Body dataSiswa: DataSiswa) : retrofit2. Response<Void>
+
 
 }
 
